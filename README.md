@@ -12,3 +12,7 @@ Ctrl + Alt + N          = Run on terminal
 Ctrl + , (Preferences)  = Code-runner: Clear Previous Output
 
 ```
+
+- [ ] Var: scopo global
+- [ ] Let
+- [ ] Const
