@@ -10,7 +10,8 @@ Aulas do Sobrino de JavaScript
 ```
 Ctrl + Alt + N          = Run on terminal
 Ctrl + , (Preferences)  = Code-runner: Clear Previous Output
-
+VAR.toFixed(1)          = 0.0
+VAR.toFixed(3)          = 0.000
 ```
 
 - [ ] Var: scopo global
