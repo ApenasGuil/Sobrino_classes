@@ -14,5 +14,5 @@ Ctrl + , (Preferences)  = Code-runner: Clear Previous Output
 ```
 
 - [ ] Var: scopo global
-- [ ] Let
-- [ ] Const
+- [ ] Let: scopo de bloco
+- [ ] Const: variável de valor constante
