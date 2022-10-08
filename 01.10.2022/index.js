@@ -18,9 +18,32 @@ console.log("Nome: ",nome,"-",typeof nome);
 console.log("Idade: ",idade,"-",typeof idade);
 console.log("É aluno: ",eAluno,"-",typeof eAluno);
 
-let notaP1=5, notaP2=4.5, notaP3;
+let notaP1=5, notaP2=9, notaP3;
 console.log(typeof notaP3);
 let media=(notaP1+2*notaP2)/3;
 console.log('Média: ', media.toFixed(1));
 
 console.log(`A média do ${nome} é ${media.toFixed(1)}`);
+
+let estado, conceito;
+
+if(media >= 5) {
+    estado = "Aprovado";
+} else {
+    estado = "Reprovado";
+}
+
+if (media >= 9) {
+    conceito = "A";
+} else if (media >= 7) {
+    conceito = "B";
+} else if (media >= 5) {
+    conceito = "C";
+} else if (media >= 2) {
+    conceito = "D";
+} else {
+    conceito = "E";
+}
+
+console.log("Média: ", media.toFixed(2));
+console.log(`O aluno ${nome} está ${estado} com o conceito ${conceito}`)
