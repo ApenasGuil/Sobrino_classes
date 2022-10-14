@@ -52,3 +52,15 @@ do {
     console.log(i);
     i+=2;
 } while (i<=20);
+
+// Expressão de função
+
+let parOuImpar = function(num = 0) {
+    if (num%2 == 0) {
+        return "PAR";
+    }
+    return "ÍMPAR";
+}
+
+console.log("5 é par ou ímpar? " + parOuImpar(5));
+console.log("8 é par ou ímpar? " + parOuImpar(8));
