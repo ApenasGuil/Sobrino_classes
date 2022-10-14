@@ -64,3 +64,11 @@ let parOuImpar = function(num = 0) {
 
 console.log("5 é par ou ímpar? " + parOuImpar(5));
 console.log("8 é par ou ímpar? " + parOuImpar(8));
+
+// Operador condicional ternário
+
+let parOuImparV2 = function(num = 0) {
+    return (num % 2 == 0) ? "PAR" : "ÍMPAR";
+}
+
+console.log("5 é par ou ímpar? " + parOuImparV2(5));
