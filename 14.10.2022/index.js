@@ -72,3 +72,16 @@ let parOuImparV2 = function(num = 0) {
 }
 
 console.log("5 é par ou ímpar? " + parOuImparV2(5));
+
+// Arrow function
+
+let somaV2 = (n1 = 0, n2 = 0) => {
+    return n1 + n2;
+}
+
+// Encurtado
+/* 
+let somaV2 = (n1 = 0, n2 = 0) => n1 + n2;
+*/
+
+console.log(somaV2(2,3));
