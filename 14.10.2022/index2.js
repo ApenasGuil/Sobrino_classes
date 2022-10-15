@@ -18,7 +18,7 @@ professores.unshift("Avelino", "Claudio Carvalho"); // Adiciona na posição 0 v
 /* professores.push("Avelino, Branquinho"); // Adiciona no final do vetor
 professores.pop(); // Remove a última posição */
 
-console.table(professores);
+/* console.table(professores); */
 
 /* professores.splice(3, 4) // A partir da posição X, elimina Y */
 
@@ -27,3 +27,9 @@ console.table(professores);
 /* professores.sort(); // Ordena em ordem alfabética */
 
 console.table(professores);
+
+// iteração com for
+
+for (let i = 0; i < professores.length; i++) {
+    console.log(professores[i]);
+}
