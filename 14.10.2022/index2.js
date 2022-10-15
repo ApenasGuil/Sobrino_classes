@@ -30,6 +30,12 @@ console.table(professores);
 
 // iteração com for
 
-for (let i = 0; i < professores.length; i++) {
+/* for (let i = 0; i < professores.length; i++) {
     console.log(professores[i]);
-}
+} */
+
+// Foreach / Função de callback (Callback function)
+
+professores.forEach(professor => {
+    console.log(professor);
+});

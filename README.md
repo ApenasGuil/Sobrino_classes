@@ -17,3 +17,13 @@ VAR.toFixed(3)          = 0.000
 - [ ] Var: scopo global
 - [ ] Let: scopo de bloco
 - [ ] Const: variável de valor constante
+
+#### Setar SSH com GitHub
+
+```git
+ssh-keygen -t ed25519 -C "email"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clip < ~/.ssh/id_ed25519.pub
+// Colar no github
+```
