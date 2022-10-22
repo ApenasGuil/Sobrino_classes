@@ -43,3 +43,9 @@ const strJSON = JSON.stringify(arrayAmigos);
 console.log(strJSON);
 
 // Visualizador gráfico de JSON https://jsoncrack.com/editor
+
+// JSON para Objetos JS
+
+/* const objetoJS = JSON.parse('[{"nome":"Alexandre","idade":32,"eAluno":false},{"nome":"Guerra","idade":37,"eAluno":false},{"nome":"Maurício","idade":35,"eAluno":false}]'); */
+const objetoJS = JSON.parse(strJSON);
+console.table(objetoJS)
