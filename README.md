@@ -18,6 +18,10 @@ VAR.toFixed(3)          = 0.000
 - [ ] Let: scopo de bloco
 - [ ] Const: variável de valor constante
 
+Visualizador gráfico de JSON https://jsoncrack.com/editor
+
+Como utilizar o Splice() - https://www.javascripttutorial.net/javascript-array-splice/#:~:text=Deleting%20elements%20using%20JavaScript%20Array's%20splice()%20method&text=The%20position%20specifies%20the%20position,that%20contains%20the%20deleted%20elements.
+
 #### Setar SSH com GitHub
 
 ```git

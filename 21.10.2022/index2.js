@@ -35,4 +35,11 @@ const arrayAmigos = [
 ]
 
 // Array de objetos
-console.table(arrayAmigos[1].nome.length);
+/* console.table(arrayAmigos[1].nome.length); */
+
+// Objetos JS para JSON
+
+const strJSON = JSON.stringify(arrayAmigos);
+console.log(strJSON);
+
+// Visualizador gráfico de JSON https://jsoncrack.com/editor
