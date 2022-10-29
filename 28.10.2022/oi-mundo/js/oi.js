@@ -2,8 +2,14 @@ const nome = document.getElementById("nome");
 const btnSaudar = document.getElementById("btnSaudar");
 const saida = document.getElementById("saida");
 
-btnSaudar.onclick = function() {
+function saudarUsuario() {
     saida.textContent = "Oi, " + nome.value + "!";
 }
+
+btnSaudar.addEventListener("click", saudarUsuario); /* Callback function */
+
+/* btnSaudar.onclick = function() {
+    saida.textContent = "Oi, " + nome.value + "!";
+} */
 
 /* document.getElementById("saida").textContent = "Oi!"; */
