@@ -9,7 +9,8 @@ function getCEP() {
 }
 
 function buscarDadosCEP() {
-    saida.textContent = getCEP();
+    let urlCEP = `https://viacep.com.br/ws/${getCEP()}/json/`;
+    saida.textContent = urlCEP;
 }
 
 btnPesquisar.addEventListener("click", buscarDadosCEP);
