@@ -9,7 +9,10 @@ function getCEP() {
 }
 
 function exibirDadosCEP(obj) {
-    return "Aprensentar os dados do CEP.";
+    if(!obj.erro) {
+        return "Apresentar os dados do CEP.";
+    }
+    return "CEP inexistente.";
 }
 
 async function buscarDadosCEP() { // "async" garante que tudo dentro da função seja realizado de forma síncrona
