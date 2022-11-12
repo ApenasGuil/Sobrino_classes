@@ -8,13 +8,22 @@ function getCEP() {
     return Number(cep.value);
 }
 
+function exibirDadosCEP(obj) {
+    return "Aprensentar os dados do CEP.";
+}
+
 async function buscarDadosCEP() { // "async" garante que tudo dentro da função seja realizado de forma síncrona
     let urlCEP = `https://viacep.com.br/ws/${getCEP()}/json/`;
+    saida.textContent = "";
+    
+    try { // Tenta rodar o bloco
     const CEPBuscado = fetch(urlCEP); // retorna uma promessa
     const resposta = await CEPBuscado; // garente que há um retorno
     const dadosCEPJSON = await resposta.json(); // espera o retorno de reposta em formato JSON
-    console.log(dadosCEPJSON);
-    //saida.textContent = urlCEP;
+    saida.textContent = exibirDadosCEP(dadosCEPJSON);
+    } catch (e) { // Lida com qualquer erro que retornar
+        saida.textContent = e;
+    }
 }
 
 btnPesquisar.addEventListener("click", buscarDadosCEP);
