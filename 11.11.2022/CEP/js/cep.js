@@ -5,12 +5,17 @@ const btnPesquisar = document.getElementById("btnPesquisar");
 const saida = document.getElementById("saida");
 
 function getCEP() {
-    return Number(cep.value);
+    return cep.value; // No uso de mask, o Number() conflita com o hífen
 }
 
 function exibirDadosCEP(obj) {
     if(!obj.erro) {
-        return "Apresentar os dados do CEP.";
+        let dadosCEP = `
+            ${obj.logradouro} - 
+            ${obj.bairro} - 
+            ${obj.localidade}/${obj.uf}
+        `;
+        return dadosCEP;
     }
     return "CEP inexistente.";
 }
